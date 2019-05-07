@@ -1,0 +1,40 @@
+<html lang="en">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <!-- Begin Jekyll SEO tag v2.5.0 -->
+        <title>Helper Bookmarklets</title>
+
+    </head>
+
+    <body >
+
+
+        <section >
+            <h1>Browser Helpers</h1>
+
+            <a href='javascript:(function(){var f=document,a=window,b=f.createElement("div"),c="position:fixed;top:0;left:0;color:#fff;background:#222;padding:5px 1em;font:14px sans-serif;z-index:999999",e=function(){if(a.innerWidth===undefined){b.innerText=f.documentElement.clientWidth+"x"+f.documentElement.clientHeight;}else if(f.all){b.innerText=a.innerWidth+"x"+a.innerHeight;}else{b.textContent=window.innerWidth+"x"+window.innerHeight;}};f.body.appendChild(b);if(typeof b.style.cssText!=="undefined"){b.style.cssText=c;}else{b.setAttribute("style",c);}e();if(a.addEventListener){a.addEventListener("resize",e,false);}else{if(a.attachEvent){a.attachEvent("onresize",e);}else{a.onresize=e;}}})();'>Get Window Size</a>
+            </br></br>
+            <a href="javascript:var total = 0;for(var x in localStorage) { var amount = (localStorage[x].length * 2) / 1024 / 1024; total += amount; console.log( x + '=' + amount.toFixed(2) + ' MB');}console.log( 'Total: ' + total.toFixed(2) + ' MB');">Local Storage Size</a>
+
+        </section>
+
+        <section>
+            <h1>Azure DevOps Pipelines</h1>
+
+            <a href="javascript:(function(){ $(&quot;div[data-automation-key='name']&quot;).css('width', '400px');$(&quot;div[data-item-key='name']&quot;).css('width', '400px') })();">Fix Keyvault secret name column</a>
+
+            </br></br>
+            <a href="('[data-automation-key=&quot;active-release-definition-name-column&quot;]').css(&quot;min-width&quot;, &quot;auto&quot;).css(&quot;width&quot;, &quot;400px&quot;)">Fix Release Pipeline Name Column Width</a>
+        </section>
+
+        <section>
+            <h1>GitHub</h1>
+
+            <a href="javascript:(function(){ document.querySelector('.file').style.width = 'max-content'; })();">Fix Code Viewer Width</a>
+        </section>
+
+    </body>
+
+</html>
